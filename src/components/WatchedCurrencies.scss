@@ -1,0 +1,10 @@
+.watchListHeadler {
+  text-align: center;
+}
+
+.watchedCoinsHeader,
+.watchedCoins,
+.watchListHeadler {
+  transform: rotateY(180deg);
+  width: 100%;
+}

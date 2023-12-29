@@ -1,0 +1,77 @@
+@import "../index.scss";
+
+@mixin paragraph {
+  p {
+    width: 15%;
+  }
+  p:first-child {
+    width: 5%;
+  }
+  p:last-child {
+    text-align: center;
+  }
+}
+
+.coinsContainer {
+  @include flexColumn;
+  align-items: center;
+  width: 23%;
+  height: 70%;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: transparent;
+
+  h1 {
+    text-align: center;
+  }
+  .coinsHeader {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    @include alignItemsjustifyContent;
+    @include paragraph;
+
+    .icon {
+      cursor: pointer;
+    }
+  }
+
+  .coinsTable {
+    width: 100%;
+    overflow-y: scroll;
+
+    .cryptoRow {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      @include alignItemsjustifyContent;
+
+      @include paragraph;
+    }
+  }
+}
+
+.imgTd {
+  @include flexColumn;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.coinsTable::-webkit-scrollbar {
+  width: 0px;
+}
+.coinsContainer {
+  transition: transform 1s ease;
+}
+
+.watchlistOpen {
+  transform: rotateY(180deg);
+}
+span {
+  cursor: pointer;
+}
