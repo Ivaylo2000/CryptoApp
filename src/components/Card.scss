@@ -15,7 +15,7 @@
 .coinsContainer {
   @include flexColumn;
   align-items: center;
-  width: 23%;
+  width: 450px;
   height: 70%;
   padding: 10px;
   border: 1px solid #ffffff;
@@ -25,6 +25,10 @@
 
   h1 {
     text-align: center;
+  }
+
+  span {
+    margin-bottom: 10px;
   }
   .coinsHeader {
     width: 100%;
@@ -74,4 +78,30 @@
 }
 span {
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .coinsContainer {
+    width: 85%;
+
+    .coinsHeader {
+      p {
+        font-size: 10px;
+        text-align: start;
+      }
+    }
+    .coinsTable {
+      font-size: 10px;
+      text-align: start;
+    }
+  }
+
+  .imgTd {
+    @include flexColumn;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

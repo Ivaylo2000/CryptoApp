@@ -1,4 +1,4 @@
-export const cryptoData = [
+export const backupData = [
   {
     id: "bitcoin",
     symbol: "btc",

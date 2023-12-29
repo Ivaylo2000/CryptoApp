@@ -7,7 +7,6 @@ import WatchedCurrencies from "./WatchedCurrencies";
 import useGetCoins from "../hooks/useGetCoins";
 import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
-// import { cryptoData } from "./cryptoData";
 
 const Card = () => {
   const [selectedStarIndices, setSelectedStarIndices] = useState([]);
